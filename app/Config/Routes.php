@@ -33,6 +33,17 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Dashboard::index');
+$routes->get('/pages/chartjs', 'Pages::chartjs');
+$routes->get('/pages/forms', 'Pages::forms');
+$routes->get('/pages/icons', 'Pages::icons');
+$routes->get('/pages/blank-page', 'Pages::samplesBlankPage');
+$routes->get('/pages/error-404', 'Pages::samplesError404');
+$routes->get('/pages/error-500', 'Pages::samplesError500');
+$routes->get('/pages/login', 'Pages::samplesLogin');
+$routes->get('/pages/register', 'Pages::samplesRegister');
+$routes->get('/pages/tables', 'Pages::tables');
+$routes->get('/pages/button', 'Pages::uiFeaturesButton');
+$routes->get('/pages/typography', 'Pages::uiFeaturesTypography');
 
 /*
  * --------------------------------------------------------------------
